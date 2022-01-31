@@ -1,2 +1,2 @@
 # Java Basic Programming -- Practice
-Practice Colleciton from My old archive
+Practice Collection from My archive
