@@ -6,8 +6,12 @@ public class ArrayListExample {
         number.add(15);
         number.add(18);
         number.add(3,20); //index 3(defined) and element 20
-
         System.out.println("Array List Size : " + number.size());
         System.out.println("Array List: " + number);
+
+        System.out.println("Array List Values :");
+        for (int x : number){
+            System.out.println(" " + x);
+        }
     }
 }
