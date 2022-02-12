@@ -4,8 +4,12 @@ public class WrapperClass {
         // Autoboxing : Primitive -> Object
         int x = 10;
         Integer y = Integer.valueOf(x);
-
         System.out.println("y = "+ y);
 
+        //Unboxing : Object -> Primitive
+
+        Double a = new Double(10.5);
+        double b = a;
+        System.out.println("b = "+ b);
     }
 }
