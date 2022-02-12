@@ -23,5 +23,15 @@ public class WrapperClass {
         double e =  155.5;
         String f = Double.toString(e);
         System.out.println("f = " + e);
+
+
+        //String to Primitive
+        String s = "100";
+        int t = Integer.parseInt(s);
+        System.out.println("t = " + t);
+
+        String m = "100.5";
+        double n = Double.parseDouble(m);
+        System.out.println("n = " + n);
     }
 }
