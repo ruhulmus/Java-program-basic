@@ -28,6 +28,7 @@ public class WrapperClass {
         //String to Primitive
         String s = "100";
         int t = Integer.parseInt(s);
+//      int t = Integer.valueOf(s);
         System.out.println("t = " + t);
 
         String m = "100.5";
