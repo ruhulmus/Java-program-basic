@@ -14,5 +14,10 @@ public class WrapperClass {
         Double c =  new Double(15.5);
         double d = c.doubleValue();
         System.out.println("d =" + d);
+
+        //premitive to string
+        int i = 100;
+        String z = Integer.toString(i);
+        System.out.println("z =" + z);
     }
 }
