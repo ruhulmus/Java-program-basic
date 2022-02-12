@@ -17,7 +17,11 @@ public class WrapperClass {
 
         //premitive to string
         int i = 100;
-        String z = Integer.toString(i);
-        System.out.println("z =" + z);
+        String j = Integer.toString(i);
+        System.out.println("j = " + j);
+
+        double e =  155.5;
+        String f = Double.toString(e);
+        System.out.println("f = " + e);
     }
 }
