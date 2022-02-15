@@ -10,10 +10,11 @@ public class Box {
         width = w;
         depth = d;
     }
-
     void dislayVol(){
         System.out.println("Height : " + height);
         System.out.println("Width : " + width);
         System.out.println("Depth : " + depth);
+        System.out.println("Box Volume is : " + height * width * width);
+
     }
 }
