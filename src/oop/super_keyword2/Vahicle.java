@@ -2,9 +2,9 @@ package oop.super_keyword2;
 
 public class Vahicle {
     String color ;
-    Double weight;
+    double weight;
 
-    Vahicle(String color, Double weight){
+    Vahicle(String color, double weight){
         this.color = color;
         this.weight =weight;
     }
