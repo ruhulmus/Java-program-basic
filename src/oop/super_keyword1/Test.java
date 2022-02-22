@@ -1,8 +1,8 @@
-package oop.java;
+package oop.super_keyword1;
 
-public class XYMain {
+public class Test {
     public static void main(String[] args) {
-        Y obj = new Y();
+        B obj = new B();
         obj.display();
     }
 }

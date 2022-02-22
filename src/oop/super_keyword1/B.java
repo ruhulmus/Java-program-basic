@@ -1,4 +1,4 @@
-package oop.java;
+package oop.super_keyword1;
 
 public class B extends A{
     int x = 5;
