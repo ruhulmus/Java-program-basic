@@ -8,7 +8,7 @@ public class Triangle extends Shape{
         this.length = length;
     }
 
-    double area(double base, double length){
+    double area(){
         return .5*base*length;
     }
 }

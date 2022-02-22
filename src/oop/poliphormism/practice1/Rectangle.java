@@ -7,7 +7,7 @@ public class Rectangle extends Shape{
         this.width = width;
     }
 
-    double area(double length, double width){
+    double area(){
         return length*width;
     }
 }
