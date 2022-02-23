@@ -2,7 +2,8 @@ package oop.poliphormism.practice2;
 
 public class MyCalculator {
     int x,y,z;
-    public int multiplication(){
+
+    public int multiplication(int x, int y){
         return z = x*y;
     }
     public static void main(String[] args) {
@@ -12,6 +13,7 @@ public class MyCalculator {
 
         System.out.println("Addition : "+ obj.addition());
         System.out.println("Substruct : "+ obj.substruct());
- //        this.multiplication();
+        System.out.println("multiplication : "+ obj2.multiplication(10,12));
+
     }
 }
