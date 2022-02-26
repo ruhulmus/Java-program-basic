@@ -1,7 +1,7 @@
 package oop.abstraction;
 
 public class Circle extends Shape{
-    double result,dim1,dim2;
+    double result;
 
     Circle(double r){
         super(r,r);
