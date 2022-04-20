@@ -11,7 +11,7 @@ public class ForEach {
             sum += number;
             i++;
         }
-        int avg = sum/numbers.length;
+        double avg = (double)sum/(double)numbers.length;
         System.out.println("SUM " + sum);
         System.out.println("AVG " + avg);
     }
