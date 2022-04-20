@@ -11,6 +11,6 @@ public class ForEach {
             sum += number;
             i++;
         }
-        System.out.println("Total" + sum);
+        System.out.println("Total " + sum);
     }
 }
