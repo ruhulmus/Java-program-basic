@@ -1,6 +1,6 @@
 public class ForEach {
     public static void main(String[] args) {
-        // Create array
+        //declare and initialize and array
         int[] numbers = {5,6,2,4};
 
         int i=0;
