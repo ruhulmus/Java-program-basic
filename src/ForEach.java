@@ -6,7 +6,7 @@ public class ForEach {
         int i=0;
         //Fo reach
         for (int number : numbers){
-            System.out.println("Number "+i+" "+ number);
+            System.out.println("Number"+i+" "+ number);
             i++;
         }
     }
