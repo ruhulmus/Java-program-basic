@@ -1,7 +1,7 @@
 public class ForEach {
     public static void main(String[] args) {
         // Create array
-        int numbers [] = {5,6,2,4};
+        int[] numbers = {5,6,2,4};
 
         int i=0;
         int sum = 0;
