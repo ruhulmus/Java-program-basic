@@ -3,9 +3,11 @@ public class ForEach {
         // Create array
         int numbers [] = {5,6,2,4};
 
+        int i=0;
         //Fo reach
         for (int number : numbers){
-            System.out.println("Number "+ number);
+            System.out.println("Number "+i+" "+ number);
+            i++;
         }
     }
 }
