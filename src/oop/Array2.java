@@ -23,10 +23,15 @@ public class Array2 {
                     System.out.println("arr[i] : "+ arr[i]);
                     System.out.println("arr[j] : "+ arr[j]);
                     tmp = arr[i];
+                    System.out.println("tmp : "+ tmp);
                     arr[i] = arr[j];
+                    System.out.println("arr[i]2 : "+ arr[i]);
                     arr[j] = tmp;
+                    System.out.println("arr[j] 2 : "+ arr[j]);
                 }
+
             }
+            System.out.println("====");
         }
         System.out.println(Arrays.toString(arr));
 
