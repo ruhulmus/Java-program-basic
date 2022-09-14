@@ -1,6 +1,8 @@
+import java.util.Arrays;
+
 public class SelectionSort {
     public static void main(String[] args) {
-        int arr[] = {2,4,10,5,32,45};
+        int arr[] = {2,4,-10,5,32,45};
 
         int i, j,min_idx, temp,n;
         n = arr.length;
@@ -16,7 +18,7 @@ public class SelectionSort {
             arr[min_idx] = arr[i];
             arr[i]=temp;
         }
-        System.out.println();
+        System.out.println("Array : " + Arrays.toString(arr));
 
     }
 }
