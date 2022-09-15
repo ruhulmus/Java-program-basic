@@ -1,10 +1,12 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class ArrayListAscDesc {
     public static void main(String[] args) {
         ArrayList<Integer> number = new ArrayList<>(); //intializatiton and empty Array list
         number.add(10);
-        number.add(15);
+        number.add(25);
         number.add(18);
         number.add(3,20); //index 3(defined) and element 20
         System.out.println("Array List Size : " + number.size());
@@ -14,5 +16,9 @@ public class ArrayListAscDesc {
         for (int x : number){
             System.out.println(" " + x);
         }
+
+
+        Collections.sort(number);
+        System.out.println("Sorted Array :" + number);
     }
 }
