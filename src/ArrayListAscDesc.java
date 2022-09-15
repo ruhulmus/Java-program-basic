@@ -19,6 +19,9 @@ public class ArrayListAscDesc {
 
 
         Collections.sort(number);
-        System.out.println("Sorted Array :" + number);
+        System.out.println("Sorted Array ASC :" + number);
+
+        Collections.sort(number, Collections.reverseOrder());
+        System.out.println("Sorted Array Desc:" + number);
     }
 }
