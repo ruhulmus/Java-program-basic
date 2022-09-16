@@ -22,15 +22,21 @@ public class LoopExercize {
 //        }
 
         //Output 100 98 96 94 92 .. n
-        for ( i = num; i > 1; i-=2){
-            System.out.print(" "+ i);
-        }
+//        for ( i = num; i > 1; i-=2){
+//            System.out.print(" "+ i);
+//        }
+        //Outtput 99 97 95 93 91 .. n
+//        for ( i = num; i >= 1; i--){
+//            if(i%2 !=0)
+//            System.out.print(" "+ i);
+//        }
 
-        for ( i = num; i >= 1; i--){
-            if(i%2 !=0)
-            System.out.print(" "+ i);
+        i = num ;
+        while(i >= 1){
+            if( i%2 == 0)
+                System.out.print(" " + i);
+            i--;
         }
-
 
     }
 }
