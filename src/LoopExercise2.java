@@ -15,17 +15,23 @@ public class LoopExercise2 {
 //                break;
 //            }
 //        }
-        while(true){
-            System.out.print("Enter a Number : ");
+
+        //Using While loop
+//        while(true){
+//            System.out.print("Enter a Number : ");
+//            sum += input.nextInt();
+//
+//            if (sum >= 100){
+//                System.out.print("Exceeds 100");
+//                break;
+//            }
+//
+//        }
+
+        while(sum <=100){
+            System.out.print("Enter a number : ");
             sum += input.nextInt();
-
-            if (sum >= 100){
-                System.out.print("Exceeds 100");
-                break;
-            }
-
         }
-
-
+        System.out.print("Exceeds 100");
     }
 }
