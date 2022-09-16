@@ -17,9 +17,20 @@ public class LoopExercize {
 //        }
 
        //Output  100 99 98 97 96 ... 2
-        for ( i = num; i > 1; i--){
+//        for ( i = num; i > 1; i--){
+//            System.out.print(" "+ i);
+//        }
+
+        //Output 100 98 96 94 92 .. n
+        for ( i = num; i > 1; i-=2){
             System.out.print(" "+ i);
         }
+
+        for ( i = num; i >= 1; i--){
+            if(i%2 !=0)
+            System.out.print(" "+ i);
+        }
+
 
     }
 }
