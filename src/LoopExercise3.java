@@ -17,13 +17,6 @@ public class LoopExercise3 {
                     System.out.print(" "+ i);
                 }
             }
-
-//            if (num <= sum/2){
-//                if (num%i ==0){
-//
-//                }
-//
-//            }
         }
         System.out.print(" = "+ sum);
     }
