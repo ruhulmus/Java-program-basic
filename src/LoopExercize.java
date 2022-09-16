@@ -31,12 +31,13 @@ public class LoopExercize {
 //            System.out.print(" "+ i);
 //        }
 
-        i = num ;
-        while(i >= 1){
-            if( i%2 == 0)
-                System.out.print(" " + i);
-            i--;
-        }
+//        i = num ;
+//        while(i >= 1){
+//            if( i%2 == 0)
+//                System.out.print(" " + i);
+//            i--;
+//        }
+
 
     }
 }
