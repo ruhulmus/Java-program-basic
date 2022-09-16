@@ -7,7 +7,7 @@ public class LoopExercize {
         int num = input.nextInt();
 
         System.out.println("numbers : ");
-        for (int i=0; i < num ; i++){
+        for (int i=2; i <= num ; i+=2){
             System.out.print(" "+ i);
         }
 
