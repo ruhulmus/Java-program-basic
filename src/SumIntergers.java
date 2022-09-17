@@ -1,14 +1,13 @@
 public class SumIntergers {
 
-    static void sum(int a, int b){
-        for(int i=1 ; i<=b;i++){
+    public static int getSum(int a, int b) {
+        for(int i=1;i<=b;i++){
             a++;
         }
-        System.out.print("Sum :" + a);
-
+        return a;
     }
-    public static void main(String[] args) {
-        sum(10, 24);
+    public static void main(String args[]){
+        int a = getSum(2, -3);
+        System.out.print(a);
     }
-
 }
