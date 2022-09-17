@@ -60,29 +60,64 @@ public class PrimeNumber3 {
 //        getPrime(start, end);
 //    }
 
-    static void checkPrime(int n){
-        int i, count=0;
-        if(n==0 | n== 1){
-            System.out.print("Not a Prime");
-        }
-        else{
-            for(i=2; i <n; i++){
-                if (n%i == 0){
-                    count++;
-                    break;
-                }
-            }
-            if (count == 0){
-                System.out.print("Is a Prime");
-            }else
-                System.out.println("Not a Prime");
-        }
+    //check between 2 Given number form User
 
+//    static void getPrime(int start, int end){
+//        System.out.print("Prime number Between " + start + " to " + end +" : ");
+//
+//        int i,count=0;
+//
+//        for(i=start;i<end;i++){
+//            if(isPrime(i)){
+//                System.out.print(" "+i);
+//            }
+//
+//
+//        }
+//    }
+//    static boolean isPrime(int n){
+//        if(n==0 | n==1 | n%2==0)
+//            return false;
+//        else
+//            return true;
+//
+//    }
+//    public static void main(String[] args){
+//        Scanner input = new Scanner(System.in);
+//        System.out.print("Enter your First Number : ");
+//
+//        int start = input.nextInt();
+//        System.out.print("Enter your Second Number : ");
+//        int end = input.nextInt();
+//
+//        getPrime(start, end);
+//    }
+
+    public static void main(String[] args) {
+
+        System.out.println(Math.sqrt(4));
+
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the first number : ");
+        int start = s.nextInt();
+        System.out.print("Enter the second number : ");
+        int end = s.nextInt();
+        System.out.println("List of prime numbers between " + start + " and " + end);
+        for (int i = start; i <= end; i++) {
+            if (isPrime(i)) {
+                System.out.println(i);
+            }
+        }
     }
-    public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        System.out.print("Please enter a number : ");
-        int num = input.nextInt();
-        checkPrime(num);
-     }
+    public static boolean isPrime(int n) {
+        if (n <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
