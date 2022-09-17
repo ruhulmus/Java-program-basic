@@ -13,7 +13,6 @@ public class LoopExercise4 {
 
         System.out.print("Please Enter Your Number : " );
 
-
         int num = input.nextInt();
         int i, temp = 0, max =num, min = num;
         if(num>=0) {
