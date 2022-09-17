@@ -3,12 +3,18 @@ import java.util.Scanner;
 public class LoopExercise6 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.print("Please enter a number : ");
 
         int num = input.nextInt();
-        int sum = 0;
+        int feb = 0;
+        int first = 0, second = 1;
         for (int i=0; i<num;i++){
-            sum += i;
-            System.out.print(" "+sum);
+             feb = first+second;
+             System.out.print(" tt "+feb);
+
+             first = feb;
+
+
         }
 
     }
