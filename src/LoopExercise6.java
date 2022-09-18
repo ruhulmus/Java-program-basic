@@ -8,13 +8,10 @@ public class LoopExercise6 {
         int num = input.nextInt();
         int feb = 0;
         int first = 0, second = 1;
-        for (int i=0; i<num;i++){
+        for (int i=1; i<num;i++){
              feb = first+second;
              System.out.print(" tt "+feb);
-
              first = feb;
-
-
         }
 
     }
