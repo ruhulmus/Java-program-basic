@@ -6,7 +6,6 @@ public class LoopExercise7 {
         System.out.print("Please enter a number : ");
 
         String str = input.nextLine();
-
         for (int i=0; i<str.length(); i++){
             System.out.print(" "+str.charAt(i));
         }
