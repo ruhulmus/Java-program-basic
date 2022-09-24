@@ -13,7 +13,5 @@ public class SumOfDigits {
             sum = sum+val;
         }
         System.out.println("Total Sum of Digits :  " + sum);
-
-
     }
 }
