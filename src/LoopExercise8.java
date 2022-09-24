@@ -6,7 +6,12 @@ public class LoopExercise8 {
         System.out.print("Enter a text : ");
 
         String str = input.nextLine();
+
+        String reverse = "";
+
         for (int i= str.length()-1; i>=0 ; i--)
-            System.out.print(str.charAt(i));
+            reverse +=str.charAt(i);
+        System.out.print(reverse);
+
     }
 }
