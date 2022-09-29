@@ -6,13 +6,10 @@ public class LoopExerciseDemo {
 
 
         int sum = 0;
-        while(true){
-            System.out.print("Please enter you number : ");
-            Integer value = input.nextInt();
-            sum +=value;
-            if (sum >= 100)
-                 break;
-        }
+       do{
+           System.out.print("Please Enter a number : ");
+           sum += input.nextInt();
+       }while(sum <=100);
         System.out.print("Done");
     }
 }
