@@ -1,7 +1,10 @@
 public class LoopExerciseDemo {
     public static void main(String[] args) {
-        for (int i = 100; i>=2 ; i-=2){
-            System.out.print(i + " ");
+       int i = 2;
+        while (i<=100){
+            if (i%2 ==0)
+                System.out.print( i+ " ");
+            i+=2;
         }
     }
 }
