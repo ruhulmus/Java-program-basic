@@ -1,10 +1,18 @@
+import java.util.Scanner;
+
 public class LoopExerciseDemo {
     public static void main(String[] args) {
-       int i = 2;
-        while (i<=100){
-            if (i%2 ==0)
-                System.out.print( i+ " ");
-            i+=2;
+        Scanner input = new Scanner(System.in);
+
+
+        int sum = 0;
+        while(true){
+            System.out.print("Please enter you number : ");
+            Integer value = input.nextInt();
+            sum +=value;
+            if (sum >= 100)
+                 break;
         }
+        System.out.print("Done");
     }
 }
