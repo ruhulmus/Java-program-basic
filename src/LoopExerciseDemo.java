@@ -5,25 +5,17 @@ public class LoopExerciseDemo {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a number : ");
         int n = input.nextInt();
-        int max = n, min = n;
 
-        if(n>=0){
-            while(true){
-                 n = input.nextInt();
-
-                if(n<0)
-                    break;
-                max = n > max ? n : max;
-                min = n < min ? n : min;
+        int num = n;
+        int count = 0;
+//        System.out.println(num/10);
+        while(true){
+            if(num%10 == 0){
+                break;
             }
-            System.out.print("Max " + max +", Min "+ min);
+            count +=num%10;
+            num = num/10;
         }
-        else{
-            System.out.print("invalid");
-        }
-
-
-
-
+        System.out.print(count);
     }
 }
