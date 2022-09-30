@@ -8,12 +8,13 @@ public class LoopExerciseDemo {
 
         int i = 2;
         boolean flag = true;
-
+        System.out.print("primes number are : " +i);
         while(i<=num/2){
             if (num%i == 0){
                 flag = false;
                 break;
             }
+            System.out.print(" " +i);
             i++;
         }
         System.out.print(flag?"Prime number": "not a prime number");
