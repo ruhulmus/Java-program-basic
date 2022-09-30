@@ -3,38 +3,27 @@ import java.util.Scanner;
 public class LoopExerciseDemo {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number : ");
+        int n = input.nextInt();
+        int max = n, min = n;
 
-        try{
-            System.out.print("Please enter first number : ");
-            int first = input.nextInt();
+        if(n>=0){
+            while(true){
+                 n = input.nextInt();
 
-            System.out.print("Please enter Second number : ");
-            int second = input.nextInt();
-
-            if(first >0 && second>0){
-                for (int i = first; i<=second; i++){
-                    if (isPrime(i))
-                        System.out.print(" "+i);
-                }
+                if(n<0)
+                    break;
+                max = n > max ? n : max;
+                min = n < min ? n : min;
             }
-            else{
-                System.out.print("Only positive integer allowed");
-            }
-
-
-        }catch (Exception e){
-            System.out.print("ONly integer number is allowed " + e);
+            System.out.print("Max " + max +", Min "+ min);
+        }
+        else{
+            System.out.print("invalid");
         }
 
 
-    }
-    private static boolean isPrime(int value){
-        boolean flag = true;
-        for(int i = 2 ; i<=value/2; i++){
-            if(value%i==0){
-                flag = false;
-            }
-        }
-        return flag;
+
+
     }
 }
