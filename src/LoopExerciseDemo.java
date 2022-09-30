@@ -3,24 +3,26 @@ import java.util.Scanner;
 public class LoopExerciseDemo {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Please enter a number : ");
-        int num = input.nextInt();
+        System.out.print("Please enter first number : ");
+        int first = input.nextInt();
 
-        int i = 2;
-        boolean flag = true;
-        int count =0;
-        System.out.print("primes number are : " +i);
-        while(i<=num/2){
-            if (num%i == 0){
-                flag = false;
-                break;
-            }
+        System.out.print("Please enter Second number : ");
+        int second = input.nextInt();
+//        boolean flag = true;
 
-            i++;
-
-            System.out.print(" " +i);
+        for (int i = first; i<=second; i++){
+            if (isPrime(i))
+                System.out.print(" "+i);
         }
-        System.out.println();
-        System.out.print(flag?"Prime number": "not a prime number");
+
+    }
+    private static boolean isPrime(int value){
+        boolean flag = true;
+        for(int i = 2 ; i<=value/2; i++){
+            if(value%i==0){
+                flag = false;
+            }
+        }
+        return flag;
     }
 }
