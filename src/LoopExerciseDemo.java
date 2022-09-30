@@ -8,15 +8,19 @@ public class LoopExerciseDemo {
 
         int i = 2;
         boolean flag = true;
+        int count =0;
         System.out.print("primes number are : " +i);
         while(i<=num/2){
             if (num%i == 0){
                 flag = false;
                 break;
             }
-            System.out.print(" " +i);
+
             i++;
+
+            System.out.print(" " +i);
         }
+        System.out.println();
         System.out.print(flag?"Prime number": "not a prime number");
     }
 }
