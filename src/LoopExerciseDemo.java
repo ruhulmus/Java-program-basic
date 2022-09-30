@@ -6,14 +6,16 @@ public class LoopExerciseDemo {
         System.out.print("Please enter a number : ");
         int num = input.nextInt();
 
+        int i = 2;
         boolean flag = true;
 
-        for (int i=2; i<=num/2; i++){
-            if (num%i == 0 ){
+        while(i<=num/2){
+            if (num%i == 0){
                 flag = false;
+                break;
             }
-
+            i++;
         }
-        System.out.print(flag ? "Prime number" : "Not a prime number");
+        System.out.print(flag?"Prime number": "not a prime number");
     }
 }
