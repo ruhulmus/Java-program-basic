@@ -6,16 +6,16 @@ public class LoopExerciseDemo {
         System.out.print("Enter a number : ");
         int n = input.nextInt();
 
-        int num = n;
-        int count = 0;
-//        System.out.println(num/10);
-        while(true){
-            if(num%10 == 0){
-                break;
-            }
-            count +=num%10;
-            num = num/10;
+        int first = 1;
+        int second = 1;
+        int count;
+        System.out.print(first+" "+ second);
+        for (int i = 2 ; i < n; i++){
+            count = first + second;
+            first = second;
+            second = count;
+            System.out.print(" "+ count);
         }
-        System.out.print(count);
+
     }
 }
