@@ -1,3 +1,4 @@
+//Right Triangle Star Pattern
 public class StarPattern1 {
     public static void main(String[] args) {
         for (int i=0; i<=5; i++){
