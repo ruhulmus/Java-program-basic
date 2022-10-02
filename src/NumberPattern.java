@@ -41,6 +41,25 @@ public class NumberPattern {
             System.out.println();
         }
         System.out.println("====================");
+
+
+        for(i=1;i<=row;i++){
+            for(j=i;j<=row-1;j++){
+                System.out.print(" ");
+            }
+            for(k=1;k<=i;k++){
+                System.out.print(k);
+            }
+
+            for(j=i-1;j>=1;j--){
+                System.out.print(j);
+            }
+
+            System.out.println();
+        }
+
+        System.out.println("====================");
+
     }
 }
 // output
