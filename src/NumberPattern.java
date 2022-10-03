@@ -60,6 +60,26 @@ public class NumberPattern {
 
         System.out.println("====================");
 
+
+        for(i=1;i<=row;i++){
+            for(j=i;j<=row-1;j++){
+                System.out.print(" ");
+            }
+            for(k=i;k>1;k--){
+                System.out.print(k);
+            }
+            for(j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+
+        System.out.println("====================");
+
+        for(i=1;i<row;i++){
+            for(j=)
+        }
+
     }
 }
 // output
