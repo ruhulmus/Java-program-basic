@@ -1,5 +1,5 @@
 //Star Pattern
-public class StarPattern10 {
+public class NumberPattern8 {
     public static void main(String[] args) {
         int i,j,k, n = 10;
 
@@ -46,7 +46,7 @@ public class StarPattern10 {
 
         System.out.print("=====================");
 
-
+        
     }
 }
 // output
