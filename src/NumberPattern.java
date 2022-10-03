@@ -83,6 +83,17 @@ public class NumberPattern {
             System.out.println();
         }
 
+        System.out.println("====================");
+
+        for(i=1;i<=row;i++){
+            for(j=1;j<=i-1;j++){
+                System.out.print(" ");
+            }
+            for(k=i;k<=row;k++){
+                System.out.print(k+" ");
+            }
+            System.out.println();
+        }
     }
 }
 // output
