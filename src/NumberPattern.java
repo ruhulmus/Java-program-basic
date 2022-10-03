@@ -94,6 +94,15 @@ public class NumberPattern {
             }
             System.out.println();
         }
+        for(i=row-1;i>=1;i--){
+            for(j=1;j<=i-1;j++){
+                System.out.print(" ");
+            }
+            for(k=i;k<=row;k++){
+                System.out.print(k+" ");
+            }
+            System.out.println();
+        }
     }
 }
 // output
