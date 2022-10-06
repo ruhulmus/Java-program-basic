@@ -75,7 +75,6 @@ public class NumberPattern {
         }
 
         System.out.println("====================");
-
         for(i=1;i<=row;i++){
             for(j=1;j<=i;j++){
                 System.out.print(i);
