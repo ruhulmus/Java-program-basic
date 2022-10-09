@@ -42,7 +42,6 @@ public class NumberPattern {
         }
         System.out.println("====================");
 
-
         for(i=1;i<=row;i++){
             for(j=i;j<=row-1;j++){
                 System.out.print(" ");
@@ -59,7 +58,7 @@ public class NumberPattern {
         }
 
         System.out.println("====================");
-        
+
         for(i=1;i<=row;i++){
             for(j=i;j<=row-1;j++){
                 System.out.print(" ");
