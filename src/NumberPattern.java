@@ -26,6 +26,7 @@ public class NumberPattern {
             }
             System.out.println();
         }
+        
         System.out.println("====================");
 
         for(i=row;i>=1;i--){
