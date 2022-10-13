@@ -45,8 +45,7 @@ public class StarPattern10 {
         }
 
         System.out.print("=====================");
-
-
+        
     }
 }
 // output
