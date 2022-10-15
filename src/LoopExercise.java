@@ -9,10 +9,13 @@ public class LoopExercise {
         while(true){
             num = input.nextInt();
             if (num >=0){
-                if (num >= max)
-                    max = num;
-                if (num <= min)
-                    min = num;
+//                if (num >= max)
+//                    max = num;
+//                if (num <= min)
+//                    min = num;
+
+                max = num >= max ? num : max;
+                min = num <= min ? num : min;
             }
             else{
                 System.out.println("max : "+ max + ", Min : "+ min);
