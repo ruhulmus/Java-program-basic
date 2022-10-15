@@ -26,10 +26,8 @@ public class LoopExercise {
         while(num > 0){
             sum += num%10;
             num = num/10;
-             if (num%10 == 0)
-                 break;
+            System.out.println(num);
         }
         System.out.println("sum : "+ sum);
-
     }
 }
