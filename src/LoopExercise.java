@@ -30,15 +30,24 @@ public class LoopExercise {
 //        }
 //        System.out.println("sum : "+ sum);
 
-        int first_num = 1, secont_num = 1;
-        System.out.print(first_num + ", " + secont_num);
-        for (int i = 2; i<num; i++){
-            int n = first_num + secont_num;
-            System.out.print(",  "+n);
-            first_num = secont_num;
-            secont_num = n;
-        }
+//        int first_num = 1, secont_num = 1;
+//        System.out.print(first_num + ", " + secont_num);
+//        for (int i = 2; i<num; i++){
+//            int n = first_num + secont_num;
+//            System.out.print(",  "+n);
+//            first_num = secont_num;
+//            secont_num = n;
+//        }
 
+
+        int firstNum = 1, secNum = 1;
+        System.out.print(firstNum + ",  "+secNum);
+        for(int i=2; i <num; i++){
+            int n = firstNum + secNum;
+            System.out.print(",  "+n);
+            firstNum = secNum;
+            secNum = n;
+        }
 
     }
 }
