@@ -10,7 +10,6 @@ public class ArrayExercise1 {
 
         if(n<=20 || 2>=1){
             int[] numbers = new int[n];
-
             for(int i=0;i<n;i++){
                 int num = input.nextInt();
                 numbers[i]=num;
