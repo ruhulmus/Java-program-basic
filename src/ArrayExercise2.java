@@ -3,11 +3,15 @@ public class ArrayExercise2 {
         int[] numbers = {1,2,-3,5,7};
 
         int sum =0;
-        int products = 0;
-        int avarage = 0;
+        int products = 1;
+
         for(int i = 0; i<numbers.length;i++){
             sum += numbers[i];
+            products *= numbers[i];
         }
-        System.out.print("sum : "+sum);
+        double avarage = (double) sum / numbers.length;
+        System.out.println("sum : "+sum);
+        System.out.println("Avarage : "+ avarage);
+        System.out.println("products : "+ products);
     }
 }
