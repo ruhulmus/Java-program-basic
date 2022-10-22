@@ -35,12 +35,18 @@ public class ArrayExercise3 {
 
         //========================================
 
-        int[] num= new int[numbers.length];
+        int[] temp= new int[numbers.length];
+        int j = 0;
+        int k = numbers.length-1;
         for(int i=0;i<numbers.length;i++){
+
             if((numbers[i] % 2) != 0 ){
-                num[i] = numbers[i];
+                temp[j++] = numbers[i];
+//                System.out.println(num[i] +" "+numbers[i]);
             }
+            else
+                temp[k--]=numbers[i];
         }
-        System.out.print(Arrays.toString(num));
+        System.out.print(Arrays.toString(temp));
     }
 }
