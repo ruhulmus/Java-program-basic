@@ -15,13 +15,8 @@ public class ArrayExercise1 {
                 int num = input.nextInt();
                 numbers[i]=num;
             }
-
             System.out.print(Arrays.toString(numbers));
         }
-
-    }
-
-    private static void fillArray(int[] number) {
 
     }
 }
