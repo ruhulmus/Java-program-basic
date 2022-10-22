@@ -45,6 +45,14 @@ public class ArrayExercise3 {
             else
                 temp[k--]=numbers[i];
         }
+        System.out.print(Arrays.toString(temp));
+        coppyArray(temp,numbers);
+    }
+
+    private static void coppyArray(int[] temp, int[] numbers) {
+        for(int i =0; i<temp.length;i++){
+            numbers[i]=temp[i];
+        }
         System.out.print(Arrays.toString(numbers));
     }
 }
