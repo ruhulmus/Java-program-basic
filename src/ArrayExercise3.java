@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayExercise3 {
@@ -9,7 +10,7 @@ public class ArrayExercise3 {
         // Please enter your number : 3
         // 3 Occurs 1 times
 
-        int[] numbers = {1,1,1,2,-3,4};
+        int[] numbers = {1,2,4,5,7,9,-2,3};
 
 //        int count = 0;
 //        for(int i = 0; i<numbers.length;i++){
@@ -23,13 +24,23 @@ public class ArrayExercise3 {
 
         //=====================
 
-        int min = numbers[0];
-        int max = numbers[0];
+//        int min = numbers[0];
+//        int max = numbers[0];
+//
+//        for(int i=0; i < numbers.length; i++) {
+//            max = (max < numbers[i]) ? numbers[i] : max;
+//            min = (min > numbers[i]) ? numbers[i] : min;
+//        }
+//        System.out.print("Max : " + max + " , Min "+min);
 
-        for(int i=0; i < numbers.length; i++) {
-            max = (max < numbers[i]) ? numbers[i] : max;
-            min = (min > numbers[i]) ? numbers[i] : min;
+        //========================================
+
+        int[] num= new int[numbers.length];
+        for(int i=0;i<numbers.length;i++){
+            if((numbers[i] % 2) != 0 ){
+                num[i] = numbers[i];
+            }
         }
-        System.out.print("Max : " + max + " , Min "+min);
+        System.out.print(Arrays.toString(num));
     }
 }
