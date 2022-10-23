@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrayExercise4 {
     public static void main(String[] args) {
         int[][] integers = {{3,5,7},{10,2,9}};
@@ -18,7 +20,9 @@ public class ArrayExercise4 {
                 System.out.print(integers[j][i] + " ");
             }
             System.out.println();
+
         }
+        System.out.println(Arrays.deepToString(integers));
     }
 
 }
