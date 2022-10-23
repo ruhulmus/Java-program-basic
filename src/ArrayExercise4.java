@@ -28,7 +28,7 @@ public class ArrayExercise4 {
 //                System.out.print(integers[i][j] + " ");
             }
              System.out.println();
-            System.out.println("Sum of Row "+ i +" : "+rowSum);
+            System.out.println("Sum of Row "+ (i+1) +" : "+rowSum);
         }
 
         for(int i = 0; i <= integers.length;i++){
@@ -37,7 +37,7 @@ public class ArrayExercise4 {
                 colSum += integers[j][i];
             }
             System.out.println();
-            System.out.println("Sum of Col "+ i +" : "+colSum);
+            System.out.println("Sum of Col "+ (i+1) +" : "+colSum);
         }
 
         System.out.println(Arrays.deepToString(integers));
