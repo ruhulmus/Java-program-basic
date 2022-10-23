@@ -8,10 +8,8 @@ public class ArrayExercise4 {
                 {9,10,11,12}
         };
 
-        int rowSum = 0;
-        int colSum = 0;
 
-        for(int i = 0; i<integers.length;i++){
+         for(int i = 0; i < integers.length;i++){
 //            System.out.println(integers[0][0]);
 //            System.out.println(integers[0][1]);
 //            System.out.println(integers[0][2]);
@@ -24,12 +22,24 @@ public class ArrayExercise4 {
 //            System.out.println(integers[i]);
 //            rowSum += integers[i];
 
-            for(int j =0; j<integers.length;j++){
-                System.out.print(integers[i][j] + " ");
+            int rowSum = 0;
+            for(int j = 0; j<integers[i].length;j++){
+                rowSum += integers[i][j];
+//                System.out.print(integers[i][j] + " ");
+            }
+             System.out.println();
+            System.out.println("Sum of Row "+ i +" : "+rowSum);
+        }
+
+        for(int i = 0; i <= integers.length;i++){
+            int colSum = 0;
+            for(int j=0; j<integers.length;j++){
+                colSum += integers[j][i];
             }
             System.out.println();
-
+            System.out.println("Sum of Col "+ i +" : "+colSum);
         }
+
         System.out.println(Arrays.deepToString(integers));
     }
 
