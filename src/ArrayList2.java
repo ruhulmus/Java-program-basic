@@ -13,7 +13,6 @@ public class ArrayList2 {
 
         for(int i=0; i<num1;i++){
             int num = input.nextInt();
-//            checkExist(items, num);
             if(!items.contains(num))
                 items.add(num);
         }
