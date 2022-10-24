@@ -13,19 +13,21 @@ public class ArrayListExercise {
         int num;
         switch (option){
             case 1:
+                System.out.print("Enter your Value : ");
                 num = input.nextInt();
                 numbers.add(num);
-                System.out.print(num + "Aded !!");
+                System.out.println(num + " Aded !!");
                 takeInput();
                 break;
             case 2:
+                System.out.println("Enter your Value : ");
                 num = input.nextInt();
                 if(numbers.contains(num)){
                     numbers.remove(num);
-                    System.out.print(num + " removed !");
+                    System.out.println(num + " removed !");
                 }
                 else{
-                    System.out.print(num + " not found !");
+                    System.out.println(num + " not found !");
                 }
                 takeInput();
                 break;
@@ -38,7 +40,7 @@ public class ArrayListExercise {
                 System.out.print("Bye !!");
                 break;
             default:
-                System.out.print("Invalid input !!");
+                System.out.println("Invalid input !!");
                 takeInput();
         }
     }
@@ -50,15 +52,15 @@ public class ArrayListExercise {
         System.out.println("3. Display");
         System.out.println("4. Exit");
         System.out.println();
-        System.out.println("Your Choice : ");
+        System.out.print("Your Choice : ");
         int num = input.nextInt();
     }
 
     private static void printOptions() {
-        System.out.print("1. Add");
-        System.out.print("2. Remove");
-        System.out.print("3. Display");
-        System.out.print("4. Exit");
+        System.out.println("1. Add");
+        System.out.println("2. Remove");
+        System.out.println("3. Display");
+        System.out.println("4. Exit");
         System.out.println();
         System.out.print("Your Choice : ");
     }
