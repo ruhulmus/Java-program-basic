@@ -8,6 +8,7 @@ public class ArrayListExercise {
         displayOptions();
         ArrayList<Integer> numbers = new ArrayList<>();
 
+
         while(true){
 
             int options = input.nextInt();
@@ -31,17 +32,19 @@ public class ArrayListExercise {
                 System.out.println("Bye !");
                 break;
             }
-//            switch (item){
+//            switch (options){
 //                case 1:
 //                    System.out.print("Enter your value for Add : ");
+//                    int item = input.nextInt();
 //                    addItem(numbers, item);
 //                    displayOptions();
 //                case 2:
 //                    System.out.print("Enter your value for remove : ");
+//                    item = input.nextInt();
 //                    removeItem(numbers,item);
 //                    displayOptions();
 //                case 3:
-//                    displayItems(numbers,item);
+//                    displayItems(numbers);
 //                    displayOptions();
 //                case 4:
 //                    System.out.println("Bye !");
@@ -59,9 +62,9 @@ public class ArrayListExercise {
 
     private static void removeItem(ArrayList<Integer> numbers, int item) {
         if(numbers.contains(item)){
-            numbers.remove(item);
+            System.out.println("yes");
+            numbers.remove(Integer.valueOf(item));
             System.out.println("Remove !");
-
         }
         else{
             System.out.println("Not Found");
