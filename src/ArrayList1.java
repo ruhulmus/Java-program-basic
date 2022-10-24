@@ -11,6 +11,13 @@ public class ArrayList1 {
 //        }
 //        System.out.println(integers);
 
+        int[] arr= {5,2,2,0};
+        int count =0;
+        for(Integer item:arr){
+            System.out.print(item+" "+count);
+            count++;
+            System.out.println();
+        }
 
     }
 }
