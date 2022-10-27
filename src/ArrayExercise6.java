@@ -1,0 +1,2 @@
+public class ArrayExercise6 {
+}
