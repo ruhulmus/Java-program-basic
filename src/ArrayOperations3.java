@@ -17,7 +17,6 @@ public class ArrayOperations3 {
 
         for(int i = arr.length -1; i>index; i--){
                 arr[i] = arr[i-1];
-          System.out.println("asd "+ arr[i-1]);
         }
         arr[index]=value;
         System.out.print(Arrays.toString(arr));
