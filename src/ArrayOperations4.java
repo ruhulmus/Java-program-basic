@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+import java.util.*;
 public class ArrayOperations4 {
     public static void main(String[] args) {
         int[] arr = {2, 4, 1, 8, 5};
@@ -13,8 +13,8 @@ public class ArrayOperations4 {
         }
         System.out.println(Arrays.toString(arr));
 
-        int[] nums = {3,2,4};
-        int target = 6;
+        int[] nums = {2, 4, 1, 8, 5};
+        int target = 3;
 
         int[] arr2 = new int[2];
         
@@ -26,14 +26,28 @@ public class ArrayOperations4 {
 
     }
 
+//    private static int[] getSum(int[] nums, int target) {
+//        for(int i=0;i<nums.length;i++){
+//
+//            for(int j=i+1; j<nums.length;j++){
+//                if(nums[i]+nums[j] == target){
+//                    return new int[] {i,j};
+//                }
+//            }
+//        }
+//        return null;
+//    }
     private static int[] getSum(int[] nums, int target) {
-        for(int i=0;i<nums.length;i++){
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0 ; i < nums.length ; i++) {
+            int cur = nums[i];
 
-            for(int j=i+1; j<nums.length;j++){
-                if(nums[i]+nums[j] == target){
-                    return new int[] {i,j};
-                }
+            if (map.get(target-cur) != null) {
+                System.out.println(map.get(target-cur)+" "+i);
+
+                return new int[] {map.get(target-cur), i};
             }
+//            map.put(cur, i);
         }
         return null;
     }
