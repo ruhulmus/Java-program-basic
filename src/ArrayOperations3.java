@@ -10,16 +10,16 @@ public class ArrayOperations3 {
         arr[3]=8;
         arr[4]=5;
 
-       int position  = 3;
-       int index = position-1;
+       int position  = 4;
        int value = 10;
-        System.out.println("actual Array : " + Arrays.toString(arr));
 
-        for(int i = arr.length -1; i>index; i--){
-                arr[i] = arr[i-1];
-        }
-        arr[index]=value;
-        System.out.print(Arrays.toString(arr));
+       System.out.println("Existing Array :"+ Arrays.toString(arr));
+       for(int i = arr.length-1;i>=position;i-- ){
+            arr[i]= arr[i-1];
+       }
+       arr[position-1] = value;
+
+       System.out.print("Update Array : "+ Arrays.toString(arr));
     }
 
 
