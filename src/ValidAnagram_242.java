@@ -20,9 +20,6 @@ public class ValidAnagram_242 {
 //        else
 //            System.out.println("no");
 
-
-
-
         char arr1[] = s.toCharArray();
         char arr2[] = t.toCharArray();
         Arrays.sort(arr1);
